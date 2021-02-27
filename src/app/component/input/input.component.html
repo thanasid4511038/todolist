@@ -1,0 +1,14 @@
+<div style="margin-left: 15%;">   
+<p>Test</p>
+
+<p id="1">รายการที่ต้องทำ {{namedone}}</p>
+<input type="text" [(ngModel)]="namedone">
+<button (click)=add(namedone)>ADD</button>
+<button (click)=del()>RESET</button>
+<p>รายการรอทำ</p>
+<ul *ngFor="let item of boxtodo" id="1">
+    <div *ngIf="show">      
+        <mx (click)=dex(item)>{{item}}</mx>
+    </div>
+</ul>
+</div>
